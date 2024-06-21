@@ -19,7 +19,7 @@ export const handlers = [
   http.post("/api/logout", () => {
     return new HttpResponse(null, {
       headers: {
-        "Set-Cookie": "connect-sid=;HttpOnly;Path=/;Max-Age=0",
+        "Set-Cookie": "connect-sid=;HttpOnly;Path=/",
       },
     });
   }),
