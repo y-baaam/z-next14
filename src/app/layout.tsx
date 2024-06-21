@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import MSWComponent from "./_component/MSWComponent";
 type Props = {
   children: React.ReactNode;
   modal: React.ReactNode;
@@ -13,8 +14,8 @@ export default function RootLayout({ children, modal }: Props) {
   return (
     <html lang="en">
       <body>
+        <MSWComponent />
         {children}
-        {modal}
       </body>
     </html>
   );
